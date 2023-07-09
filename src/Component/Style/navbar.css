@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+@media (max-width: 824px) {
+    .nav-list{
+        display: none;
+
+    }
+    .humburger{
+        display: flexbox;
+    }
+  }
+
+@media (min-width: 824px) {
+
+    .humburger{
+        display: none;
+    }
+}
+
+@keyframes humburg-scroll-down-effect {
+    from{
+        transform: translateY(-50vh);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
+  
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand>h2{
+    padding: 7px 20px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.nav-list{
+    margin-right: 25px;
+}
+.nav-items{
+    margin: 0px 20px;
+    padding: 7px 0px;
+    transition: all 0.3s;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    font-size: 16px;
+}
+.nav-burger-items{
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 20px;
+    padding: 7px 0px;
+    cursor: pointer;
+}
+.nav-items:hover{
+    box-shadow: 0 5px 0px -2px black;
+    cursor:pointer;
+}
+.humberg-menu{
+    position: absolute;
+    min-width: 100vw;
+    background-color: white;
+    transition: all 0.5s;
+    animation: humburg-scroll-down-effect 0.5s ease-in-out;
+}
+
+
+.humburger{
+    margin-right: 25px;
+    padding: 7px 20px;
+    cursor: pointer;
+    position: relative;
+    top: 4px;
+    padding: 30px;
+}
+.burger-item{
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+}
+.close-burger{
+    display: flex;
+    justify-content: end;
+    margin-right: 35px;
+    padding-top: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.nav-burger-lists>ul>li:hover{
+    box-shadow: 0 0px 0px 0px black;
+}
